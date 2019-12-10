@@ -57,35 +57,35 @@ LGPL License Terms @ref lgpl_license
 #define GPIO3_DATA			GPIO_DATA(GPIO3)
 
 /* GPIO data direction register (GPIOn_DIR) */
-#define GPIO_DIR(port)			MMIO32((port) + 0x00)
+#define GPIO_DIR(port)			MMIO32((port) + 0x8000)
 #define GPIO0_DIR			GPIO_DIR(GPIO0)
 #define GPIO1_DIR			GPIO_DIR(GPIO1)
 #define GPIO2_DIR			GPIO_DIR(GPIO2)
 #define GPIO3_DIR			GPIO_DIR(GPIO3)
 
 /* GPIO interrupt sense register (GPIOn_IS) */
-#define GPIO_IS(port)			MMIO32((port) + 0x04)
+#define GPIO_IS(port)			MMIO32((port) + 0x8004)
 #define GPIO0_IS			GPIO_IS(GPIO0)
 #define GPIO1_IS			GPIO_IS(GPIO1)
 #define GPIO2_IS			GPIO_IS(GPIO2)
 #define GPIO3_IS			GPIO_IS(GPIO3)
 
 /* GPIO interrupt both edges sense register (GPIOn_IBE) */
-#define GPIO_IBE(port)			MMIO32((port) + 0x08)
+#define GPIO_IBE(port)			MMIO32((port) + 0x8008)
 #define GPIO0_IBE			GPIO_IBE(GPIO0)
 #define GPIO1_IBE			GPIO_IBE(GPIO1)
 #define GPIO2_IBE			GPIO_IBE(GPIO2)
 #define GPIO3_IBE			GPIO_IBE(GPIO3)
 
 /* GPIO interrupt event register (GPIOn_IEV) */
-#define GPIO_IEV(port)			MMIO32((port) + 0x0c)
+#define GPIO_IEV(port)			MMIO32((port) + 0x800c)
 #define GPIO0_IEV			GPIO_IEV(GPIO0)
 #define GPIO1_IEV			GPIO_IEV(GPIO1)
 #define GPIO2_IEV			GPIO_IEV(GPIO2)
 #define GPIO3_IEV			GPIO_IEV(GPIO3)
 
 /* GPIO interrupt mask register (GPIOn_IE) */
-#define GPIO_IE(port)			MMIO16((port) + 0x10)
+#define GPIO_IE(port)			MMIO16((port) + 0x8010)
 #define GPIO0_IE			GPIO_IE(GPIO0)
 #define GPIO1_IE			GPIO_IE(GPIO1)
 #define GPIO2_IE			GPIO_IE(GPIO2)
